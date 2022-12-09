@@ -45,7 +45,7 @@ app.get("/", (req, res) => {
 
   // const blogs = [
   //   {
-  //     title: "Jesen u mom sokaku",
+  //     title: "Mislim da mislim, da ne mislim ono sto mislim.",
   //     snippet: "lorem ipsum ipsumarum ipsiparius. ",
   //   },
   //   {
