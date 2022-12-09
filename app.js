@@ -4,6 +4,8 @@ const { result } = require("lodash");
 const mongoose = require("mongoose");
 const blogRoutes = require("./routes/blogRoutes");
 
+const Blog = require("./models/blog");
+
 const app = express();
 
 //connecting to MongoDataBase.
@@ -67,22 +69,22 @@ app.get("/about", (req, res) => {
 //   console.log("redirektovano ali opet je about");
 // });
 
-// app.get("/add-blog", (req, res) => {
-//   const instance = new Blog({
-//     title: "Intance /add-blog",
-//     snippet: "blablabla",
-//     body: "ooOoo",
-//   });
+app.get("/add-blog", (req, res) => {
+  const instance = new Blog({
+    title: "Ultraliberalizam",
+    snippet: "liberate libertius no mone est.",
+    body: "orlen deventius vinicius.",
+  });
 
-//   instance
-//     .save()
-//     .then((result) => {
-//       res.send(result);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// });
+  instance
+    .save()
+    .then((result) => {
+      res.send(result);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
 
 // app.get("/all-blogs", (req, res) => {
 //   Blog.find()
