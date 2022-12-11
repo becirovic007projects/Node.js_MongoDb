@@ -71,8 +71,8 @@ app.get("/about", (req, res) => {
 
 app.get("/add-blog", (req, res) => {
   const instance = new Blog({
-    title: "Ultraliberalizam",
-    snippet: "liberate libertius no mone est.",
+    title: "Centroglobalizam",
+    snippet: "centrum imperium centrous evilista vista et.",
     body: "orlen deventius vinicius.",
   });
 
