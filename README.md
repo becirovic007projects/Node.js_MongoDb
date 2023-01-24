@@ -1,1 +1,1 @@
-# Node.js & MongoDb project
+# Node.js & MongoDb
